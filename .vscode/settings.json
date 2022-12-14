@@ -1,5 +1,5 @@
 {
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.pythonPath" :"/opt/conda/envs/web-scrap/bin/python"
+    "python.defaultInterpreterPath" :"/opt/conda/envs/web-scrap/bin/python"
 }
