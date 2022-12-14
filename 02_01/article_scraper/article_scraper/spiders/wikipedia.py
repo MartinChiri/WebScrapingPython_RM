@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from scrapy.spiders import CrawlSpider, Rule 
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from article_scraper.items import Article
 
@@ -13,7 +13,8 @@ class WikipediaSpider(CrawlSpider):
     custom_settings = {
         'FEED_URI' : 'articles.xml',
         'FEED_FORMAT': 'xml'
-    }   
+    }
+   
     def parse_info(self, response):
         article = Article()
         article['title'] = response.xpath('//h1/i/text()').get() \
