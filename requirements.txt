@@ -1,8 +1,0 @@
-# $ conda create --n web-scrap python=3.8.5
-# .. --file <this file>
-# platform: linux-64
-
-pylint
-pyopenssl==22.0.0
-scrapy==2.1.0
-Twisted==21.7.0
