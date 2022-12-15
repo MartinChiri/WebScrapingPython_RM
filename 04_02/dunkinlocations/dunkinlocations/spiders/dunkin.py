@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import time
 import scrapy
 from scrapy_selenium import SeleniumRequest
-import time
 
 def wait(driver):
     time.sleep(1)
