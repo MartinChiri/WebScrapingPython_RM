@@ -2,6 +2,7 @@
 SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = 'C:/Program Files/Google/chromedriver.exe'
 SELENIUM_DRIVER_ARGUMENTS=[]
+#SELENIUM_DRIVER_ARGUMENTS=['-headless'] # '--headless' for chrome
 # Scrapy settings for dunkinlocations project
 #
 # For simplicity, this file contains only settings considered important or
