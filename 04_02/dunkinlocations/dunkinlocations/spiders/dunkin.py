@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
-import time
 from scrapy_selenium import SeleniumRequest
+import time
 
 def wait(driver):
     time.sleep(1)
@@ -12,9 +12,8 @@ class DunkinSpider(scrapy.Spider):
     allowed_domains = ['dunkindonuts.com']
     start_urls = ['https://www.dunkindonuts.com/en/locations?location=02155']
 
-
     def make_requests_from_url(self, url):
         return SeleniumRequest(url=url, wait_time=10, wait_until=wait)
-
+    
     def parse(self, response):
-        return { 'addresses': response.xpath('//div[@class="store-item__address--line1"]/a/text()').getall() }
+        return {'addresses': response.xpath('//div[@class="store-item__address--line1"]/a/text()').getall()}
