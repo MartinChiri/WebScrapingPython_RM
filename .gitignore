@@ -1,4 +1,18 @@
-.DS_Store
-node_modules
-.tmp
-npm-debug.log
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scrapy stuff:
+.scrapy
+
+# pyenv
+.python-version
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Folder view configuration files
+*.DS_Store
+Desktop.ini
